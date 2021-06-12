@@ -9,19 +9,13 @@ namespace programming_practice
         {
             Problems problems = new Problems();
             problems.isValid("aabbcd");
-            printChars(6);
+            problems.printChars(6);
             CheckValue checkValues = new CheckValue();
             Console.WriteLine("Please type your name...");
             checkValues.Name = Console.ReadLine();
             checkValues.ReturnIfContainsMyName(checkValues.Name);
         }
 
-        public static void printChars(int num)
-        {
-            for(int i = 0; i < num; i++)
-            {
-                Console.WriteLine(new String('#', i + 1).PadLeft(num));
-            }
-        }
+        
     }
 }
